@@ -1,0 +1,33 @@
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	boolean	response= isLeapYear( 2000);
+	System.out.println(response);
+
+	}
+	
+		 public static boolean isLeapYear(int year)
+		 {
+		     if (year < 1 || year > 9999)
+		     {
+		         return false;
+		     }
+		     else if (year%4 == 0 )
+		     {
+		         if (year %100 ==0 && year % 400 != 0)
+		         {
+		             return false;
+		         }
+		         else 
+		         {
+		             return true;
+		         }
+		     }
+		     return false;
+		    
+		 }
+		}
+
+
